@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PQE质量工程师日报</title>
+<style>
+  body {
+    font-family: "Helvetica", "Roboto", "Arial", sans-serif;
+    background-color: #f5f6fa;
+    color: #2f3640;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 960px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+  header {
+    background: linear-gradient(90deg, #004E89, #0074D9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    position: relative;
+  }
+  header img {
+    position: absolute;
+    left: 30px;
+    height: 50px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    flex: 1;
+  }
+  .info {
+    background: #f0f2f5;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  section {
+    padding: 25px 30px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  section:last-child {
+    border-bottom: none;
+  }
+  h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  .done h2 { color: #27ae60; }
+  .todo h2 { color: #f39c12; }
+  .reflection h2 { color: #c0392b; }
+  .plan h2 { color: #2980b9; }
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    padding: 15px 0 25px;
+    background: #fafafa;
+  }
+  .progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 6px;
+  }
+  .progress {
+    height: 10px;
+    background-color: #27ae60;
+    width: 50%;
+  }
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="https://www.deye.com.cn/bocstatic/web/img/bocweb-logo2.png?v=v1" alt="Company Logo">
+      <h1>PQE质量工程师日报</h1>
+    </header>
+
+    <div class="info">
+      <div>日报人：<strong>张伟</strong></div>
+      <div>部门：<strong>质量保证部</strong></div>
+      <div>日期：<strong>2025年10月13日</strong></div>
+    </div>
+
+    <section class="done">
+      <h2>✅ 已完成任务</h2>
+      <ul>
+        <li>完成制程不良率周报更新。</li>
+        <li>针对产线异常点进行了初步原因分析。</li>
+        <li>参与客户投诉问题会议，记录8D报告初稿。</li>
+        <li>对第二产线AOI设备进行参数校正。</li>
+      </ul>
+    </section>
+
+    <section class="todo">
+      <h2>🕒 待办任务</h2>
+      <ul>
+        <li>继续验证AOI算法识别精度。</li>
+        <li>准备FMEA文件更新会议材料。</li>
+        <li>跟进客户投诉问题二次分析。</li>
+      </ul>
+      <div class="progress-bar">
+        <div class="progress" style="width: 50%;"></div>
+      </div>
+    </section>
+
+    <section class="reflection">
+      <h2>⚙️ 工作反思或问题</h2>
+      <ul>
+        <li>AOI设备误判仍较多，需协调设备组优化算法。</li>
+        <li>客诉信息反馈周期过长，建议统一汇报渠道。</li>
+      </ul>
+    </section>
+
+    <section class="plan">
+      <h2>📘 明日计划</h2>
+      <ul>
+        <li>跟进客户二次分析结论并编写汇总报告。</li>
+        <li>协助完成新产线试运行前的制程审核。</li>
+        <li>更新改进措施清单并提交上级复核。</li>
+      </ul>
+    </section>
+
+    <section class="extra">
+      <h2>📚 自主学习</h2>
+      <ul>
+        <li>今天利用下班时间学习了ISO 9001内审流程与新版标准的差异，计划下周参加公司组织的质量体系培训。</li>
+      </ul>
+    </section>
+
+    <section class="extra">
+      <h2>🔧 设备维护记录</h2>
+      <ul>
+        <li>SMT二号机出现贴片精度偏差，经检测为吸嘴老化，已临时更换并记录在维护系统中。</li>
+      </ul>
+    </section>
+
+    <section class="extra">
+      <h2>📝 备注</h2>
+      <ul>
+        <li>今日整体工作进展顺利，数据分析效率提升明显。</li>
+      </ul>
+    </section>
+
+    <footer>
+      自动生成于 Dify 智能日报系统 ｜ © YourCompany Inc.
+    </footer>
+  </div>
+</body>
+</html>
