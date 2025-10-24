@@ -1,0 +1,160 @@
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作日报</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 28px;
+        }
+        .date {
+            color: #7f8c8d;
+            font-size: 16px;
+            margin-top: 8px;
+        }
+        .section {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f8f9fa;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+        }
+        .section-title::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background-color: #3498db;
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .completed li {
+            color: #27ae60;
+        }
+        .pending li {
+            color: #e74c3c;
+        }
+        .progress-container {
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            height: 20px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #3498db, #2ecc71);
+            border-radius: 10px;
+            width: 66%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .reflection {
+            background-color: #fff9e6;
+            border-left: 4px solid #f1c40f;
+        }
+        .plan {
+            background-color: #e8f6f3;
+            border-left: 4px solid #1abc9c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>工作日报</h1>
+            <div class="date" id="current-date">2023年11月15日</div>
+        </div>
+        
+        <div class="section completed">
+            <div class="section-title">已完成任务</div>
+            <ul>
+                <li>销售报告分析</li>
+                <li>新客户需求文档</li>
+            </ul>
+        </div>
+        
+        <div class="section pending">
+            <div class="section-title">待办任务</div>
+            <ul>
+                <li>数据清洗任务</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">工作进度</div>
+            <div class="progress-container">
+                <div class="progress-bar">66% 完成</div>
+            </div>
+        </div>
+        
+        <div class="section reflection">
+            <div class="section-title">工作反思</div>
+            <ul>
+                <li>数据清洗任务因时间不足未能完成，需要合理安排时间</li>
+                <li>与市场部沟通需要提前安排，确保明日客户回访顺利进行</li>
+            </ul>
+        </div>
+        
+        <div class="section plan">
+            <div class="section-title">明日计划</div>
+            <ul>
+                <li>完成数据清洗任务</li>
+                <li>与市场部配合进行客户回访</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // 设置当前日期
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = now.toLocaleDateString('zh-CN', options);
+    </script>
+</body>
+</html>
+```
